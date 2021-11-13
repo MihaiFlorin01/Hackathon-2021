@@ -12,7 +12,7 @@ namespace ProiectHackathon.Model
         public int CourseId { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
-        public string Description { get; set; }      
-        public List<Exercises> Exercises { get; set; }
+        public string Description { get; set; }
+        public string Link { get; set; }
     }
 }
