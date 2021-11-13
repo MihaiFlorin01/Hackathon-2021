@@ -13,16 +13,16 @@ export class CoursesService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public GetAllCourses(): Observable<Exercises[]> {
-    return this.httpClient.get<[]>(`${this.baseURL}`);
+  public GetAllCourses(): Observable<Courses[]> {
+    return this.httpClient.get<Courses[]>(`${this.baseURL}`);
   } 
 
   public GetCourseById(id: number): Observable<object> { 
-    return this.httpClient.get<Exercises>(`${this.baseURL}/${id}`)
+    return this.httpClient.get<Courses>(`${this.baseURL}/${id}`)
   }
 
-  public CreateCourse(exercise: Courses): Observable<object> {
-    return this.httpClient.post(`${this.baseURL}`, exercise);
+  public CreateCourse(course: Courses): Observable<object> {
+    return this.httpClient.post(`${this.baseURL}`, course);
     
   }
 
