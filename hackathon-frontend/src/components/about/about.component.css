@@ -5,13 +5,24 @@
     width: 50%;
     padding-left: 30px;
     text-align: center;
-    
+    padding-bottom: 20px;
     
 }
 .imgcol1{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+
 }
 .description{
     font-family: 'Roboto',sans-serif;
+    font-size: 25px;
+    padding-left:30px;
+}
+.description-top{
+    font-size: 30px;
+}
+.about{
+    position:relative;
+    width: 100%;
+    display: block;
 }

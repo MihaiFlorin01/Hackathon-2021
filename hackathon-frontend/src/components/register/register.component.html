@@ -1,0 +1,47 @@
+
+
+  <div class="containerform">
+    <div class="title">Creare cont</div>
+    <div class="content">
+      <form  name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+
+
+   
+ 
+   <div class="input">
+     <div>
+       <label>Numele de utilizator</label>
+      </div>
+      <div>
+        <input  [(ngModel)]="form.username" name="username">
+      </div>
+    
+   </div>
+
+   <div class="input">
+<div>
+    <label>Parola</label>
+</div>
+<div>
+    <input type="password"   [(ngModel)]="form.password" name="password">
+
+</div>
+
+
+    
+   </div>
+        <div class="button">
+          <input type="submit" (click)="onSubmit()" value="Register">
+        </div>
+        <p>Aveti cont? <a class="login" (click)="onSubmit()" >Logati-va</a></p>
+       
+        
+    
+   
+      
+
+      <div>
+
+      </div>
+
+
