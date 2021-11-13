@@ -1,7 +1,7 @@
 <div class="containerform">
     <div class="title">Creare cursuri</div>
     <div class="content">
-      <form   name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+      <form   name="form" #f="ngForm" novalidate>
 
 
    
@@ -38,7 +38,7 @@
    
    <div class="input">
     <div>
-      <label>Descriere/label>
+      <label>Descriere </label>
    
      <div>
        <input  [(ngModel)]="form.description" name="description">

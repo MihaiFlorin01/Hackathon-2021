@@ -2,8 +2,8 @@
 
 export class Courses{
  
-    Name!: string;
-    Type!:string;
-    Description!: string;
-    Link!:string
+    name!: string;
+    type!:string;
+    description!: string;
+    link!:string
 }

@@ -13,8 +13,11 @@ export class CoursesComponent implements OnInit {
     courses!:Courses[];
   ngOnInit(): void {
     this.courseService.GetAllCourses().subscribe(data=>{
+      if (data != null) {
+      console.log(data);
       this.courses=data;
-    })
+      }
+    });
   }
 
 }

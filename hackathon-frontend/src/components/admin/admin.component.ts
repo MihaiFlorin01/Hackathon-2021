@@ -23,10 +23,10 @@ export class AdminComponent implements OnInit {
    onSubmit(){
   const {coursename,coursetype,coursedescription,courselink}=this.form;
   this.course={
-    Name:this.form.coursename,
-    Type:this.form.coursetype,
-    Description:this.form.description,
-    Link:this.form.link
+    name:this.form.coursename,
+    type:this.form.coursetype,
+    description:this.form.description,
+    link:this.form.link
   }
   this.courseService.CreateCourse(this.course).subscribe((data)=>{
     console.log(data);
