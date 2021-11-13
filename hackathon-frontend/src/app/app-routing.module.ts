@@ -5,7 +5,7 @@ import { AboutComponent } from 'src/components/about/about.component';
 import { CoursesComponent } from 'src/components/courses/courses.component';
 import { LoginComponent } from 'src/components/login/login.component';
 import { RegisterComponent } from 'src/components/register/register.component';
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from '../components/admin/admin.component';
 
 
 const routes: Routes = [ 

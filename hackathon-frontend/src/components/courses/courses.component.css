@@ -1,3 +1,111 @@
 
   
+  body{
+    margin: 0;
+    display: block;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  background: linear-gradient(45deg, rgba(160,160,160,0.9),rgba(70,70,70,0.9),rgba(2200,220,220,0.95));
+  animation: gradient 10s ease infinite;
+  background-size: 500%,500%;
+  margin-bottom: -300%;
+  position: fixed;
+}
+
+.content {
+  height: 500%;
+  width: 500%;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgba(160,160,160,0.9),rgba(70,70,70,0.9),rgba(2200,220,220,0.95));
+  animation: gradient 10s ease infinite;
+  background-size: 500%,500%;
+  margin-bottom: -300%;
+}
+
+.title {
+  color: white;
+  font-family: Candara;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  transform: skewY(38deg);
+  float:inline-end;
+  margin-left: 16%;
+  margin-top: 2%;
+}
+.content:hover {
+  background: linear-gradient(45deg, rgba(139,89,166,0.9),rgba(166,89,154,0.95),rgba(101,89,166,0.9));
+  animation: gradient 10s ease infinite;
+  background-size: 500%,500%;
+}
+.container:hover .title {
+    color: limegreen;
+    transform: skewY(38deg);
+  }
+
+.exercices-content {
+    max-width:200px;
+    max-height:200px;
+    display: block;
+    background: linear-gradient(45deg, rgba(160,160,160,0.9),rgba(70,70,70,0.9),rgba(2200,220,220,0.95));
+    animation: gradient 10s ease infinite;
+    overflow: hidden;
+    position:absolute;
+    right: 0;
+    top:0;
+}
+
+.exercices {
+  width: 500%;
+  height: 500%;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgba(160,160,160,0.9),rgba(70,70,70,0.9),rgba(2200,220,220,0.95));
+  animation: gradient 10s ease infinite;
+  background-size: 500%,500%;
+}
+
+.exercices .title2{
+    color:limegreen;
+}
+.exercices-content:hover .exercices {
+  width: 500%;
+  height: 500%;
+  overflow: hidden;
+  background: linear-gradient(45deg, rgba(142,255,180,0.9),rgba(142,255,236,0.95),rgba(161,255,142,0.9));
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
   
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }

@@ -1,0 +1,73 @@
+<div class="containerform">
+    <div class="title">Creare cursuri</div>
+    <div class="content">
+      <form   name="form" (ngSubmit)="onSubmit()" #f="ngForm" novalidate>
+
+
+   
+ 
+   <div class="input">
+     <div>
+       <label>Numele Cursului</label>
+      </div>
+      <div>
+        <input  [(ngModel)]="form.coursename" name="coursename">
+      </div>
+    
+   </div>
+
+   <div class="input">
+<div>
+    <label>Tipul cursului</label>
+</div>
+<div>
+    <select    [(ngModel)]="form.coursetype" name="coursetype">
+       <option>Informatica</option>
+       <option>Matematica</option>
+       <option>Biologie</option>
+       <option>Chimie</option>
+       <option>Fizica</option>
+    </select>
+
+</div>
+
+
+    
+   </div>
+   
+   
+   <div class="input">
+    <div>
+      <label>Descriere/label>
+   
+     <div>
+       <input  [(ngModel)]="form.description" name="description">
+     </div>
+   
+
+
+  <div class="input">
+    <div>
+      <label>Link</label>
+     </div>
+     <div>
+       <input  [(ngModel)]="form.link" name="link">
+     </div>
+   
+  </div>
+  
+  <div class="button">
+          <input type="submit" (click)="onSubmit()" value="Adaugare curs">
+        </div>
+
+       
+        
+    
+   
+      
+
+      <div>
+
+      </div>
+
+

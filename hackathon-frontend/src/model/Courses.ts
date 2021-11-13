@@ -1,8 +1,9 @@
-import { Exercises } from "./Exercises";
+
 
 export class Courses{
-    CourseId!: number;
+ 
     Name!: string;
+    Type!:string;
     Description!: string;
-    Exercises!: Exercises[];
+    Link!:string
 }

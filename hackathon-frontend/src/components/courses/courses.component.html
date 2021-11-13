@@ -1,3 +1,10 @@
-<app-navbar>
-    
-</app-navbar>
+
+
+<app-navbar></app-navbar>
+  
+<div class="card" *ngfor="let course of courses">
+    <p>Course Name:{course.Name}</p>
+    <p>Course Type:{course.Type}</p>
+    <p>Course Description:{course.Description}</p>
+    <p>Course Link:{course.Link}</p>
+  </div>
