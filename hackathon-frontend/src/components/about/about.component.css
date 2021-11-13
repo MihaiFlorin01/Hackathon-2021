@@ -1,5 +1,17 @@
+.raw{
+    width: 100%;
+}
 .col1{
     width: 50%;
+    padding-left: 30px;
     text-align: center;
-    padding-left: 10px;
+    
+    
+}
+.imgcol1{
+    width: 300px;
+    height: 300px;
+}
+.description{
+    font-family: 'Roboto',sans-serif;
 }
