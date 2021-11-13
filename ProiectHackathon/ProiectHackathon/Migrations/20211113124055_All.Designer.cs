@@ -10,8 +10,8 @@ using ProiectHackathon.Context;
 namespace ProiectHackathon.Migrations
 {
     [DbContext(typeof(MainContext))]
-    [Migration("20211113085431_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20211113124055_All")]
+    partial class All
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -60,6 +60,24 @@ namespace ProiectHackathon.Migrations
                     b.HasIndex("CourseId");
 
                     b.ToTable("Exercises");
+                });
+
+            modelBuilder.Entity("ProiectHackathon.Model.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("ProiectHackathon.Model.Exercises", b =>

@@ -60,6 +60,24 @@ namespace ProiectHackathon.Migrations
                     b.ToTable("Exercises");
                 });
 
+            modelBuilder.Entity("ProiectHackathon.Model.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("ProiectHackathon.Model.Exercises", b =>
                 {
                     b.HasOne("ProiectHackathon.Model.Courses", "course")

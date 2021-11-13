@@ -15,6 +15,7 @@ namespace ProiectHackathon.Context
 
         }
         public DbSet<Courses> Courses { get; set; }
-        public DbSet<Exercises> Exercises { get; set; }
+        public DbSet<Exercises> Exercises { get; set; } 
+        public DbSet<User> Users { get; set; }
     }
 }
