@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-declare const navSlide:any;
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
